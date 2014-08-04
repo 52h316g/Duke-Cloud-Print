@@ -13,7 +13,7 @@ os.environ['DJANGO_SETTINGS_MODULE'] = FRONT_END_NAME + '.settings'
 sys.path.append(script_dir + '../../' + FRONT_END_NAME)
 sys.path.append(script_dir + '../../' + FRONT_END_NAME + '/' + FRONT_END_NAME)
 
-# from django.contrib.auth import models
+from django.contrib.auth import models
 from django.contrib.auth.models import User
 
 
