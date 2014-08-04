@@ -1,0 +1,324 @@
+Error accessing https://www.google.com/cloudprint/fetch?printerid=4fce4085-4f8a-c233-2dec-5e7ce5044524
+HTTP Error 403: User credentials required
+Pausing 60 seconds
+Error accessing https://www.google.com/cloudprint/fetch?printerid=4fce4085-4f8a-c233-2dec-5e7ce5044524
+HTTP Error 403: User credentials required
+Pausing 60 seconds
+Error parsing json string 
+No JSON object could be decoded
+Error parsing json string 
+No JSON object could be decoded
+Error parsing json string 
+No JSON object could be decoded
+Error parsing json string 
+No JSON object could be decoded
+access_token : ya29.OQA5vZOdwgEFrhwAAAA235Acgc2wbpiYpuerLMUSZ7iY2vhC1f3RJZnmNVShfw
+Error parsing json string 
+No JSON object could be decoded
+Error opening access_token.txt
+[Errno 2] No such file or directory: 'access_token.txt'
+Error opening access_token.txt
+[Errno 2] No such file or directory: 'access_token.txt'
+Error parsing json string 
+No JSON object could be decoded
+Error parsing json string 
+No JSON object could be decoded
+access_token : ya29.OQBnESbf5w7woRwAAADm3qJzjF9tyfhvyvEoPUim52F3NV0Azae7wXlirs-Mqg
+access_token : ya29.OQDM6BAPMRbehBwAAABs8beMyWw2BRkV2Ruj9pgwrJ0p2DQ7_t1yklohJjiSrw
+access_token : ya29.PgCiFV1S8oNOURwAAAB8EpCUb8fVJFShsezT0wejFKH4MJpdI1E5aaQEW19lww
+new access_token acquired: ya29.PgD3_6Ig_K5S-hwAAACi5Nym28Bh21GO0dN9u65vBCKCXDognI88yuTBFdo3HA
+new access_token acquired: ya29.PgBTTD2OXAgpDxwAAAAGDZZZQN6GYjrthZTgKCcgvMCmTo1tmxEZwswCUUSiBA
+new access_token acquired: ya29.RgBYZEYqLsv09BwAAAD8QRoap14czsrlP3Qwz3QmNgSvsLWoNBY7F5Bj-kZAVQ
+Error parsing json string {
+    “jixin.liao@gmail.com”: “jl531”
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixin.liao@gmail.com”: “jl531”
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixin.liao@gmail.com”: “jl531”
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixin\.liao@gmail\.com”: “jl531”
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixin\.liao@gmail\.com”: “jl531”
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixin\.liao@gmail\.com”: “jl531”
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+  [
+    “ownerId: “jixin.liao@gmail.com”
+    “netId” : “jl531”
+  ]
+}
+Expecting property name: line 2 column 3 (char 4)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+  [
+    “ownerId: “jixin.liao@gmail.com”
+    “netId” : “jl531”
+  ]
+}
+Expecting property name: line 2 column 3 (char 4)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+  [
+    “ownerId: “jixin.liao@gmail.com”
+    “netId” : “jl531”
+  ]
+}
+Expecting property name: line 2 column 3 (char 4)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+  “users”: [
+    { 
+      “ownerId: “jixin.liao@gmail.com”
+      “netId” : “jl531”
+    }
+  ]
+}
+Expecting property name: line 2 column 3 (char 4)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+  “users”: [
+    { 
+      “ownerId: “jixin.liao@gmail.com”
+      “netId” : “jl531”
+    }
+  ]
+}
+Expecting property name: line 2 column 3 (char 4)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+  “users”: [
+    { 
+      “ownerId: “jixin.liao@gmail.com”
+      “netId” : “jl531”
+    }
+  ]
+}
+Expecting property name: line 2 column 3 (char 4)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “users”: [
+    { 
+      “ownerId: “jixin.liao@gmail.com”
+      “netId” : “jl531”
+    }
+  ]
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “users”: [
+    { 
+      “ownerId: “jixin.liao@gmail.com”
+      “netId” : “jl531”
+    }
+  ]
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “users”: [
+    { 
+      “ownerId: “jixin.liao@gmail.com”
+      “netId” : “jl531”
+    }
+  ]
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “users”: [
+    { 
+      “ownerId: “jixin.liao@gmail.com”
+      “netId” : “jl531”
+    }
+  ]
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “users”: [
+    { 
+      “ownerId: “jixin.liao@gmail.com”
+      “netId” : “jl531”
+    }
+  ]
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “users”: [
+    { 
+      “ownerId: “jixin.liao@gmail.com”
+      “netId” : “jl531”
+    }
+  ]
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+jixin.liao@gmail.com is not a registered user
+jixin.liao@gmail.com is not a registered user
+jixin.liao@gmail.com is not a registered user
+jixin.liao@gmail.com is not a registered user
+jixin.liao@gmail.com is not a registered user
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixin.liao”: "ya29.RgBYZEYqLsv09BwAAAD8QRoap14czsrlP3Qwz3QmNgSvsLWoNBY7F5Bj-kZAVQ",
+    "time": 1405667734.339861
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixin.liao”: "ya29.RgBYZEYqLsv09BwAAAD8QRoap14czsrlP3Qwz3QmNgSvsLWoNBY7F5Bj-kZAVQ",
+    "time": 1405667734.339861
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixin.liao”: "ya29.RgBYZEYqLsv09BwAAAD8QRoap14czsrlP3Qwz3QmNgSvsLWoNBY7F5Bj-kZAVQ",
+    "time": 1405667734.339861
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixinliao”: "ya29.RgBYZEYqLsv09BwAAAD8QRoap14czsrlP3Qwz3QmNgSvsLWoNBY7F5Bj-kZAVQ",
+    "time": 1405667734.339861
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixinliao”: "ya29.RgBYZEYqLsv09BwAAAD8QRoap14czsrlP3Qwz3QmNgSvsLWoNBY7F5Bj-kZAVQ",
+    "time": 1405667734.339861
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixinliao”: "ya29.RgBYZEYqLsv09BwAAAD8QRoap14czsrlP3Qwz3QmNgSvsLWoNBY7F5Bj-kZAVQ",
+    "time": 1405667734.339861
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixinliao”: "ya29.RgBYZEYqLsv09BwAAAD8QRoap14czsrlP3Qwz3QmNgSvsLWoNBY7F5Bj-kZAVQ",
+    "time": 1405667734.339861
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixinliao”: "ya29.RgBYZEYqLsv09BwAAAD8QRoap14czsrlP3Qwz3QmNgSvsLWoNBY7F5Bj-kZAVQ",
+    "time": 1405667734.339861
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    “jixinliao”: "ya29.RgBYZEYqLsv09BwAAAD8QRoap14czsrlP3Qwz3QmNgSvsLWoNBY7F5Bj-kZAVQ",
+    "time": 1405667734.339861
+}
+Expecting property name: line 2 column 5 (char 6)
+jixin.liao@gmail.com is not a registered user
+new access_token acquired: ya29.RgCg9gll5UyxchwAAADe_DM7noIGr_aloU7guw8xaI3gTTVGY3eDszcFKRxNiA
+Error parsing json string {
+    "jixin.liao@gmail.com": "jl531”,
+    “222@gmail.com": “222”,
+}
+Invalid control character at: line 2 column 39 (char 40)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    "jixin.liao@gmail.com": "jl531”,
+    “222@gmail.com": “222”,
+}
+Invalid control character at: line 2 column 39 (char 40)
+jixin.liao@gmail.com is not a registered user
+Error parsing json string {
+    "jixin.liao@gmail.com": "jl531”,
+    “222@gmail.com": “222”,
+}
+Invalid control character at: line 2 column 39 (char 40)
+jixin.liao@gmail.com is not a registered user
+new access_token acquired: ya29.RgCRS1bBl2BPcRwAAAA7sEBeLnh7ovdB9XZOJ9dc52F-uP5tF67aIwJrGh-sQQ
+Error accessing https://www.google.com/cloudprint/control?jobid=23686193-10d5-8b83-0026-23bdb7173b2e&semantic_state_diff={"state": {"type": 5}}
+HTTP Error 400: Bad Request
+Pausing 60 seconds
+Error accessing https://www.google.com/cloudprint/control?jobid=23686193-10d5-8b83-0026-23bdb7173b2e&semantic_state_diff={"state": {"type": 5}}
+HTTP Error 400: Bad Request
+Pausing 60 seconds
+new access_token acquired: ya29.RgDQfEWn6iqTHRwAAABWfZ6fBI1aUSCBWiEyr6tc1YLQw3_qacTkUepmfVBVuQ
+Error parsing json string <HTML>
+<HEAD>
+<TITLE>User credentials required</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>User credentials required</H1>
+<H2>Error 403</H2>
+</BODY>
+</HTML>
+
+No JSON object could be decoded
+Error parsing json string <HTML>
+<HEAD>
+<TITLE>User credentials required</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>User credentials required</H1>
+<H2>Error 403</H2>
+</BODY>
+</HTML>
+
+No JSON object could be decoded
+Error parsing json string <HTML>
+<HEAD>
+<TITLE>User credentials required</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>User credentials required</H1>
+<H2>Error 403</H2>
+</BODY>
+</HTML>
+
+No JSON object could be decoded
+new access_token acquired: ya29.RwA5G4R_iWw_BhwAAAA7uE3jkH9RvEYJaf5wb1xRPg35yrUl_qQqrTfBk3lgyw
+new access_token acquired: ya29.RwA9ut5k82CfzhwAAAAlwosABNz1ZBX_wAcUQszpe4dlfQ1qQIirJ_Rf3en62w
+new access_token acquired: ya29.RwA1cQTD9YaTfxwAAADbHjNG5bd4hECvApQj7UWsoy-S-tn2gN8rIs3NsMEzFA
+Error accessing https://www.google.com/cloudprint/download?id=bb501de5-196a-489c-ff79-abfe6a929140
+HTTP Error 404: 
+Pausing 60 seconds
+Error accessing https://www.google.com/cloudprint/download?id=bb501de5-196a-489c-ff79-abfe6a929140
+HTTP Error 404: 
+Pausing 60 seconds
+Error accessing https://www.google.com/cloudprint/download?id=bb501de5-196a-489c-ff79-abfe6a929140
+HTTP Error 404: 
+Pausing 60 seconds
+Error accessing https://www.google.com/cloudprint/download?id=bb501de5-196a-489c-ff79-abfe6a929140
+HTTP Error 404: 
+Pausing 60 seconds
+Error accessing https://www.google.com/cloudprint/download?id=bb501de5-196a-489c-ff79-abfe6a929140
+HTTP Error 404: 
+Pausing 60 seconds
+new access_token acquired: ya29.RwBW5lViQI9QMRwAAADBwff5rLRGiQC0YKOjYAck5bqKRByCo2hCfbJ0ckwdlA
+new access_token acquired: ya29.RwAhjLGTG67UoRwAAAAV5HYEm40WJYO8FKKotlfnU6jAXPHPbgFoF9g5aUzfOQ
+new access_token acquired: ya29.SAAsmO6V2jBWThwAAAB8tNiuuqDkH1NcogPyTXKV3LLQoy3cTUqI4tI-UzfxJw
+new access_token acquired: ya29.SgAnzfA6HnrYaBwAAADrbTNlznZn89Ydow-GX1_trOJcUmi07EsHJrHTPLnNAw
+new access_token acquired: ya29.SwDvMYSX3CN4SxwAAADLk4Ue822c_bnqRYmAsiA_6BH_FrIQu7ODc-aes96iKg
+new access_token acquired: ya29.SwANcSbwAYBiJhwAAABrAW0o9SbeOApWMZmWWUR1gaTBOZQn6N1Qkxtdq7Wx1g
+new access_token acquired: ya29.SwBh4bg_06guKRwAAADWSoYhxjBLcG5XAKURjCy0DWb1nvcbxaT5E5Z_Ch24_Q
+new access_token acquired: ya29.TADQWYQQtFg7ixwAAACr27IBGOilpShx5Wem2wcZajgaHK9nNmCS-aBHLK5pRg
+new access_token acquired: ya29.VgBcaVer15dqrhwAAABmFrud02QumK6ymAFPA_J18UClM_gI1Tq8kEbHaOroag
+new access_token acquired: ya29.VgCODEjBSlXVCxwAAAAdwzzXgCUS5iQwUwtV_JDRhGM7U9cK0BMnEl9ju2NMbQ
+new access_token acquired: ya29.VwD3nADRZXEtRxwAAAAJwA5Swhngv3k9Oev-3OqiQzrDwvtDPGdMd-8P-aQzFA

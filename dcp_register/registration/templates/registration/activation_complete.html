@@ -1,0 +1,13 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Activation complete" %}{% endblock %}
+{% block content %}
+{% url 'auth_login' as auth_login_url %}
+{% blocktrans %}
+Thanks, activation complete!  You may now 
+<a href="https://www.google.com/cloudprint/addpublicprinter.html?printerid=4fce4085-4f8a-c233-2dec-5e7ce5044524&key=2415082440">add</a>
+ the cloud printer to your Google account.
+{% endblocktrans %}
+{% endblock %}
+
+

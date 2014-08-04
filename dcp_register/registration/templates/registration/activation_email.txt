@@ -1,0 +1,10 @@
+{% load i18n %}
+{% url 'registration_activate' activation_key as activation_key_url%}
+{% blocktrans with sitename=site.name siteurl=site.domain %}
+You (or some bad guy :) ) have asked to activate your Duke Cloud Print service. If this wasn't you, please ignore this email and your address will be removed from our records.
+
+To activate your Duke Cloud Print service, please click the following link within the next 24 hours:
+
+http://{{ siteurl }}{{ activation_key_url }}
+
+{% endblocktrans %}

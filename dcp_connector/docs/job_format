@@ -1,0 +1,120 @@
+{
+ "success": true,
+ "jobs": [
+  {
+   "tags": [
+    "^own",
+    "__google__chrome_version\u003d35.0.1916.114",
+    "__google__os\u003dMacIntel"
+   ],
+   "createTime": "1404542185477",
+   "printerName": "ePrint-GCP",
+   "uiState": {
+    "summary": "QUEUED",
+    "cause": "Could not deliver print job to printer"
+   },
+   "updateTime": "1404549114190",
+   "status": "QUEUED",
+   "ownerId": "jixin.liao@gmail.com",
+   "rasterUrl": "https://www.google.com/cloudprint/download?id\u003d23686193-10d5-8b83-0026-23bdb7173b2e\u0026forcepwg\u003d1",
+   "ticketUrl": "https://www.google.com/cloudprint/ticket?format\u003dppd\u0026output\u003djson\u0026jobid\u003d23686193-10d5-8b83-0026-23bdb7173b2e",
+   "printerid": "4fce4085-4f8a-c233-2dec-5e7ce5044524",
+   "semanticState": {
+    "state": {
+     "type": "QUEUED"
+    },
+    "delivery_attempts": 9,
+    "version": "1.0"
+   },
+   "printerType": "GOOGLE",
+   "contentType": "application/pdf",
+   "fileUrl": "https://www.google.com/cloudprint/download?id\u003d23686193-10d5-8b83-0026-23bdb7173b2e",
+   "message": "",
+   "id": "23686193-10d5-8b83-0026-23bdb7173b2e",
+   "title": "Service Interfaces for Printers and Connectors - Cloud Print \u2014 Google Developers",
+   "errorCode": "",
+   "numberOfPages": 9
+  },
+  {
+   "tags": [
+    "^own",
+    "__google__chrome_version\u003d35.0.1916.114",
+    "__google__os\u003dMacIntel"
+   ],
+   "createTime": "1405086001803",
+   "printerName": "ePrint-GCP",
+   "uiState": {
+    "summary": "QUEUED",
+    "cause": "Could not deliver print job to printer"
+   },
+   "updateTime": "1405092918234",
+   "status": "QUEUED",
+   "ownerId": "jixin.liao@gmail.com",
+   "rasterUrl": "https://www.google.com/cloudprint/download?id\u003dd21ac694-9ee2-40b0-bceb-0f45c3f40491\u0026forcepwg\u003d1",
+   "ticketUrl": "https://www.google.com/cloudprint/ticket?format\u003dppd\u0026output\u003djson\u0026jobid\u003dd21ac694-9ee2-40b0-bceb-0f45c3f40491",
+   "printerid": "4fce4085-4f8a-c233-2dec-5e7ce5044524",
+   "semanticState": {
+    "state": {
+     "type": "QUEUED"
+    },
+    "delivery_attempts": 9,
+    "version": "1.0"
+   },
+   "printerType": "GOOGLE",
+   "contentType": "application/pdf",
+   "fileUrl": "https://www.google.com/cloudprint/download?id\u003dd21ac694-9ee2-40b0-bceb-0f45c3f40491",
+   "message": "",
+   "id": "d21ac694-9ee2-40b0-bceb-0f45c3f40491",
+   "title": "Developer Guide for Printers and Connectors - Cloud Print \u2014 Google Developers",
+   "errorCode": "",
+   "numberOfPages": 8
+  },
+  {
+   "tags": [
+    "^own",
+    "__google__chrome_version\u003d35.0.1916.114",
+    "__google__os\u003dMacIntel"
+   ],
+   "createTime": "1405086252555",
+   "printerName": "ePrint-GCP",
+   "uiState": {
+    "summary": "QUEUED",
+    "cause": "Could not deliver print job to printer"
+   },
+   "updateTime": "1405093172434",
+   "status": "QUEUED",
+   "ownerId": "jixin.liao@gmail.com",
+   "rasterUrl": "https://www.google.com/cloudprint/download?id\u003d0717fd56-e752-d902-94ec-48c3ffe7ff59\u0026forcepwg\u003d1",
+   "ticketUrl": "https://www.google.com/cloudprint/ticket?format\u003dppd\u0026output\u003djson\u0026jobid\u003d0717fd56-e752-d902-94ec-48c3ffe7ff59",
+   "printerid": "4fce4085-4f8a-c233-2dec-5e7ce5044524",
+   "semanticState": {
+    "state": {
+     "type": "QUEUED"
+    },
+    "delivery_attempts": 9,
+    "version": "1.0"
+   },
+   "printerType": "GOOGLE",
+   "contentType": "application/pdf",
+   "fileUrl": "https://www.google.com/cloudprint/download?id\u003d0717fd56-e752-d902-94ec-48c3ffe7ff59",
+   "message": "",
+   "id": "0717fd56-e752-d902-94ec-48c3ffe7ff59",
+   "title": "Developer Guide for Printers and Connectors - Cloud Print \u2014 Google Developers",
+   "errorCode": "",
+   "numberOfPages": 8
+  }
+ ],
+ "xsrf_token": "AIp06DipjcMp5tTkSVG9QtgC5QNCPz5dmQ:1405666953665",
+ "request": {
+  "time": "0",
+  "users": [
+   "jixin.liao@gmail.com"
+  ],
+  "params": {
+   "printerid": [
+    "4fce4085-4f8a-c233-2dec-5e7ce5044524"
+   ]
+  },
+  "user": "jixin.liao@gmail.com"
+ }
+}

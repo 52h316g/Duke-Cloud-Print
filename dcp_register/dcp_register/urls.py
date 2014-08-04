@@ -1,0 +1,16 @@
+from django.conf.urls import patterns, include, url
+
+from django.contrib import admin
+import registration.backends.default.urls
+from registration.backends.default.views import RegistrationView
+
+admin.autodiscover()
+
+urlpatterns = patterns('',
+    # Examples:
+    # url(r'^$', 'dcp_register.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+    url(r'^$', RegistrationView.as_view(), name='registration_register'),
+    url(r'^accounts/', include(registration.backends.default.urls)),
+#    url(r'^admin/', include(admin.site.urls)),
+)
