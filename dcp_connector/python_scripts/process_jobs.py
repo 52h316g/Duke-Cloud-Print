@@ -55,7 +55,7 @@ def getNetID(ownerId):
     """
     u = User.objects.get(email=ownerId)
     if u.is_active:
-        return u.email
+        return u.username
     else:
         raise User.DoesNotExist
 
@@ -87,12 +87,13 @@ def doJob(job):
         'jobid': job['id'],
         'use_cjt': 'true'
     }
-    fileName = script_dir + '/pdf_files/' + str(time.time()) + '.pdf'
+    fileName = script_dir + 'pdf_files/' + str(time.time()) + '.pdf'
     writeFile(fileName, getUrl(job['fileUrl'], []))
     ticket = callAPI('ticket', params)
     # p = subprocess.Popen(["ls", "-l", "/etc/resolv.conf"], stdout=subprocess.PIPE)
     # output, err = p.communicate()
     # print "*** Running ls -l command ***\n", output
+    subprocess.call(['lpr', '-P', 'ePrint-OIT', '-U', netId, fileName])
     print "Printing for user: " + netId
     updateJobState(job['id'], cloud_job_state_pb2.JobState.DONE)
 
