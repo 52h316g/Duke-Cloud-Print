@@ -1,6 +1,0 @@
-OAUTH = '25406697542-8qt4tdhp6sullp546m22m9sc7c41jqfn.apps.googleusercontent.com'
-CLIENT_ID = OAUTH
-ClIENT_SECRET = "imoKzZVaNCeZCfRouFEHOKN2"
-AUTHORIZATION_CODE = "4/iERHdg3DXafVlvjvdo1FpGTEOHCU.ArIL5NhER4IZaDn_6y0ZQNheyblviAI"
-REFRESH_TOKEN = "1/-cgcp_m-l8w34ksejPzCiE4aExvPesMhqoIMPn3HR2U"
-PRINTER_ID = "4fce4085-4f8a-c233-2dec-5e7ce5044524"
