@@ -22,6 +22,10 @@ BOUNDARY = mimetools.choose_boundary()
 CLOUDPRINT_URL = 'https://www.google.com/cloudprint'
 
 script_dir = os.path.dirname(os.path.realpath(__file__))+'/'
+FRONT_END_NAME = 'dcp_register'
+os.environ['DJANGO_SETTINGS_MODULE'] = FRONT_END_NAME + '.settings'
+sys.path.append(script_dir + '../../' + FRONT_END_NAME)
+sys.path.append(script_dir + '../../' + FRONT_END_NAME + '/' + FRONT_END_NAME)
 
 # The following object is used in the sample code, but is not necessary.
 logger = logging.getLogger(__name__)
@@ -75,13 +79,13 @@ def getUrl(url, tokens, data=None, cookies=False, anonymous=False):
     String: response to the HTTP request.
   """
     request = urllib2.Request(url)
-    if not anonymous:
-        if cookies:
-            logger.debug('Adding authentication credentials to cookie header')
-            request.add_header('Cookie', 'SID=%s; HSID=%s; SSID=%s' % (
-                tokens['SID'], tokens['HSID'], tokens['SSID']))
-        else:  # Don't add Auth headers when using Cookie header with auth tokens.
-            request.add_header('Authorization', 'OAuth %s' % getAccessToken())
+    # if not anonymous:
+    #     if cookies:
+    #         logger.debug('Adding authentication credentials to cookie header')
+    #         request.add_header('Cookie', 'SID=%s; HSID=%s; SSID=%s' % (
+    #             tokens['SID'], tokens['HSID'], tokens['SSID']))
+    #     else:  # Don't add Auth headers when using Cookie header with auth tokens.
+    #         request.add_header('Authorization', 'OAuth %s' % getAccessToken())
     request.add_header('X-CloudPrint-Proxy', 'api-prober')
     if data:
         request.add_data(data)
@@ -92,14 +96,21 @@ def getUrl(url, tokens, data=None, cookies=False, anonymous=False):
     retry_count = 0
     while retry_count < 5:
         try:
+            if not anonymous:
+                if cookies:
+                    logger.debug('Adding authentication credentials to cookie header')
+                    request.add_header('Cookie', 'SID=%s; HSID=%s; SSID=%s' % (
+                        tokens['SID'], tokens['HSID'], tokens['SSID']))
+                else:  # Don't add Auth headers when using Cookie header with auth tokens.
+                    request.add_header('Authorization', 'OAuth %s' % getAccessToken())
             result = urllib2.urlopen(request).read()
             return result
         except urllib2.HTTPError, e:
             # We see this error if the site goes down. We need to pause and retry.
             err_msg = 'Error accessing %s\n%s' % (url, e)
             logger.error(err_msg)
-            logger.info('Pausing %d seconds', 60)
-            time.sleep(60)
+            logger.info('Pausing %d seconds', 30)
+            time.sleep(30)
             retry_count += 1
             if retry_count == 5:
                 return err_msg
@@ -411,7 +422,8 @@ def getAccessToken(forceNew=False):
     """
 
     tokens = convertJson(readFile(script_dir + 'access_token_time.txt'))
-    if (forceNew == True) or (tokens['json'] == False) or (time.time() - tokens['time'] > 3600):
+    if (forceNew == True) or (tokens['json'] == False) or (time.time() - tokens['time'] > 3000):
+    #set expiration time from 3600s to 3000s
         params = {
             'client_id': CLIENT_ID,
             'client_secret': ClIENT_SECRET,
@@ -428,7 +440,7 @@ def getAccessToken(forceNew=False):
                 logger.error(tokens['error'])
                 return ""
             else:
-                logger.info('new access_token acquired: %s', tokens['access_token'])
+                # logger.info('new access_token acquired: %s', tokens['access_token'])
                 writeFile(script_dir + 'access_token_time.txt', json.dumps({'access_token': tokens['access_token'], 'time': time.time()},
                                                          sort_keys=True, indent=4, separators=(',', ': ')))
                 writeFile(script_dir + 'access_token_only.txt', tokens['access_token'])
@@ -437,7 +449,7 @@ def getAccessToken(forceNew=False):
             logger.error(getMessage(response))
             return ""
     else:
-        print 'access_token:', tokens['access_token']
+        # print 'access_token:', tokens['access_token']
         return tokens['access_token']
 
 

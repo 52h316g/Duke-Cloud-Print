@@ -322,3 +322,30 @@ new access_token acquired: ya29.TADQWYQQtFg7ixwAAACr27IBGOilpShx5Wem2wcZajgaHK9n
 new access_token acquired: ya29.VgBcaVer15dqrhwAAABmFrud02QumK6ymAFPA_J18UClM_gI1Tq8kEbHaOroag
 new access_token acquired: ya29.VgCODEjBSlXVCxwAAAAdwzzXgCUS5iQwUwtV_JDRhGM7U9cK0BMnEl9ju2NMbQ
 new access_token acquired: ya29.VwD3nADRZXEtRxwAAAAJwA5Swhngv3k9Oev-3OqiQzrDwvtDPGdMd-8P-aQzFA
+new access_token acquired: ya29.VwC3d9953ZjkihwAAABNFUEpOHzazTlQOXLpjv0qlA1ifxgX1o623ntE0wSjTw
+new access_token acquired: ya29.VwDcY3V8GnRWyBwAAAA9_J9UrubsGFbuBFEiOuGWPyfQm5Flgnf6U5dYMkz9CA
+new access_token acquired: ya29.VwAH1qKQ0MAWXBwAAADJVQ3z-BqgsCdLU77jXOQIUiCTHmyFS6VjlHC3Soppiw
+new access_token acquired: ya29.VwDDw0IuJJIhChwAAADzytjZde8cHYSGpXUoZ3x1LpNJCmioHto8Z8LBXEWMVQ
+new access_token acquired: ya29.VwASsgwJWWADABwAAADF6PKS9UixdYobUPuqSyHzICQHaSbhBflLG1Va7iJq7w
+new access_token acquired: ya29.WADzH7iNPLZBJhwAAABg1Mi2G1qMhphmiMfOevH-KjBrSXiPR-QQ3fhQGR-_Lw
+new access_token acquired: ya29.WAANOwwWo_GJrhwAAAC14TLnP7uy3lQg06qYIWDKtT8zPvld_1hnT6oexv2aiQ
+Error opening /home/jason/duke-cloud-print/dcp_connector/python_scripts/pdf_files/Python/C API Reference Manual  Python v2.7.8 documentation.pdf
+[Errno 2] No such file or directory: '/home/jason/duke-cloud-print/dcp_connector/python_scripts/pdf_files/Python/C API Reference Manual  Python v2.7.8 documentation.pdf'
+Error opening /home/jason/duke-cloud-print/dcp_connector/python_scripts/pdf_files/Python/C API Reference Manual — Python v2.7.8 documentation.pdf
+[Errno 2] No such file or directory: u'/home/jason/duke-cloud-print/dcp_connector/python_scripts/pdf_files/Python/C API Reference Manual \u2014 Python v2.7.8 documentation.pdf'
+Error opening /home/jason/duke-cloud-print/dcp_connector/python_scripts/pdf_files/Python/C API Reference Manual — Python v2.7.8 documentation.pdf
+[Errno 2] No such file or directory: u'/home/jason/duke-cloud-print/dcp_connector/python_scripts/pdf_files/Python/C API Reference Manual \u2014 Python v2.7.8 documentation.pdf'
+new access_token acquired: ya29.WAD2kV3I4famXhwAAAAUB509dmfKd-EQiVxECEEfLCyEnHfJp9reQZGeyoKEiw
+Error accessing https://www.google.com/cloudprint/fetch?printerid=4fce4085-4f8a-c233-2dec-5e7ce5044524
+HTTP Error 403: User credentials required
+Pausing 60 seconds
+Error accessing https://www.google.com/cloudprint/fetch?printerid=4fce4085-4f8a-c233-2dec-5e7ce5044524
+HTTP Error 403: User credentials required
+Pausing 60 seconds
+Error accessing https://www.google.com/cloudprint/fetch?printerid=4fce4085-4f8a-c233-2dec-5e7ce5044524
+HTTP Error 403: User credentials required
+Pausing 60 seconds
+Error accessing https://www.google.com/cloudprint/printer?printerid=4fce4085-4f8a-c233-2dec-5e7ce5044524&extra_fields=connectionStatus
+HTTP Error 403: User credentials required
+Pausing 60 seconds
+new access_token acquired: ya29.bAD_GfahmOLMyxwAAADmd-GBkLYOVDhESoS99KofMbYCIjp4qUucxjZXp5sEzg

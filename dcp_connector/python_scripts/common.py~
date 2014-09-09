@@ -22,6 +22,10 @@ BOUNDARY = mimetools.choose_boundary()
 CLOUDPRINT_URL = 'https://www.google.com/cloudprint'
 
 script_dir = os.path.dirname(os.path.realpath(__file__))+'/'
+FRONT_END_NAME = 'dcp_register'
+os.environ['DJANGO_SETTINGS_MODULE'] = FRONT_END_NAME + '.settings'
+sys.path.append(script_dir + '../../' + FRONT_END_NAME)
+sys.path.append(script_dir + '../../' + FRONT_END_NAME + '/' + FRONT_END_NAME)
 
 # The following object is used in the sample code, but is not necessary.
 logger = logging.getLogger(__name__)
@@ -29,7 +33,7 @@ logger.setLevel(logging.DEBUG)
 sh = logging.StreamHandler()
 sh.setLevel(logging.DEBUG)
 logger.addHandler(sh)
-fh = logging.FileHandler("log.txt")
+fh = logging.FileHandler(script_dir + "log.txt")
 fh.setLevel(logging.DEBUG)
 logger.addHandler(fh)
 

@@ -8,10 +8,14 @@ from common import *
 import subprocess
 from third_party import json2pb, cloud_job_state_pb2
 
+FRONT_END_NAME = 'dcp_register'
+os.environ['DJANGO_SETTINGS_MODULE'] = FRONT_END_NAME + '.settings'
+sys.path.append(script_dir + '../../' + FRONT_END_NAME)
+sys.path.append(script_dir + '../../' + FRONT_END_NAME + '/' + FRONT_END_NAME)
+
 from django.contrib.auth import models
 from django.contrib.auth.models import User
 
-import unicodedata
 
 def getJobs(printerid=None, jobid=None):
     """Get a list of printer jobs.
@@ -22,7 +26,7 @@ def getJobs(printerid=None, jobid=None):
     Returns:
       dictionary of job id's (key) and printer id's (value).
     """
-    keys = ['ownerId', 'ticketUrl', 'fileUrl', 'id', 'title']
+    keys = ['ownerId', 'ticketUrl', 'fileUrl', 'id']
     jobs = []
 
     if printerid:
@@ -35,11 +39,11 @@ def getJobs(printerid=None, jobid=None):
     response_dict = convertJson(response)
     if response_dict['success']:
         jobs_raw = response_dict['jobs']
-        # filter out the useful information and convert unicode to strings
+        # filter out the useful information
         for job in jobs_raw:
             job_temp = {}
             for key in keys:
-                job_temp[key] = unicodedata.normalize('NFKD', job[key]).encode('ascii', 'ignore')
+                job_temp[key] = job[key]
             jobs.append(job_temp)
     return jobs
 
@@ -47,9 +51,9 @@ def getJobs(printerid=None, jobid=None):
 def getNetID(ownerId):
     """
     :param ownerId: Google account id
-    :return: Duke NetID corresponding to ownerId
+    :return:The Duke netID corresponding to ownerId
     """
-    u = User.objects.get(email__iexact=ownerId)
+    u = User.objects.get(email=ownerId)
     if u.is_active:
         return u.username
     else:
@@ -71,12 +75,6 @@ def updateJobState(jobId, jobState):
         'message']
 
 
-def genFileName(_title):
-    keepCharacters = (' ', '.', '_')
-    title = "".join(c for c in _title if c.isalnum() or c in keepCharacters).rstrip()
-    return script_dir + 'pdf_files/' + title + '.pdf'
-
-
 def doJob(job):
     try:
         netId = getNetID(job['ownerId'])
@@ -84,29 +82,20 @@ def doJob(job):
         updateJobState(job['id'], cloud_job_state_pb2.JobState.ABORTED)
         logger.error('Unauthorized print request from: '+job['ownerId'])
         return
-    fileName = genFileName(job['title'])
-    writeFile(fileName, getUrl(job['fileUrl'], []))
+
     params = {
         'jobid': job['id'],
         'use_cjt': 'true'
     }
-    ticket = callAPI('ticket', params)['print']
-    command = ['lpr', '-P', 'ePrint-OIT', '-U', netId, '-o', 'fit-to-page']
-    if 'copies' in ticket:
-        command.append('-#' + str(ticket['copies']['copies']))
-    if 'duplex' in ticket:
-        if ticket['duplex']['type'] == 'LONG_EDGE':
-            command.extend(['-o', 'sides=two-sided-long-edge'])
-        elif ticket['duplex']['type'] == 'SHORT_EDGE':
-            command.extend(['-o', 'sides=two-sided-short-edge'])
-    # if 'page_orientation' in ticket:
-    #     if ticket['page_orientation']['type'] == 'LANDSCAPE':
-    #         command.extend(['-o', 'landscape'])
-    command.append(fileName)
-    subprocess.call(command)
-    print "Printing for user: " + netId
-    print "Document title: " + job['title']
+    fileName = script_dir + 'pdf_files/' + str(time.time()) + '.pdf'
+    writeFile(fileName, getUrl(job['fileUrl'], []))
+    ticket = callAPI('ticket', params)
+    # p = subprocess.Popen(["ls", "-l", "/etc/resolv.conf"], stdout=subprocess.PIPE)
+    # output, err = p.communicate()
+    # print "*** Running ls -l command ***\n", output
+    subprocess.call(['lpr', '-P', 'ePrint-OIT', '-U', netId, fileName])
     subprocess.call(['rm', fileName])
+    print "Printing for user: " + netId
     updateJobState(job['id'], cloud_job_state_pb2.JobState.DONE)
 
 

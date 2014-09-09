@@ -20,6 +20,10 @@ def updatePrinter():
     optionStandard = cdd.printer.color.option.add()
     optionStandard.type = cloud_device_description_pb2.Color.STANDARD_COLOR
 
+    copies = printer.copies
+    copies.default = 1
+    copies.max = 999
+
     duplex = printer.duplex
     optionNoDuplex = duplex.option.add()
     optionNoDuplex.type = cloud_device_description_pb2.Duplex.NO_DUPLEX
@@ -38,6 +42,10 @@ def updatePrinter():
     optionLandscape = orientation.option.add()
     optionLandscape.type = cloud_device_description_pb2.PageOrientation.LANDSCAPE
     printer.copies.default = 1
+
+    page_range = printer.page_range
+    defaultRange = page_range.default.add()
+    defaultRange.start = 1
 
     cap1 = printer.vendor_capability.add()
     cap1.id = '1'
